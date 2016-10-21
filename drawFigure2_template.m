@@ -13,7 +13,7 @@ fprintf(1,[' Saved: ' sFile, '\n']);
 vTime = [170, 200, 300];%, 300]; 
 nrows = length(vTime)+1;  
 
-figure('Name','Figure2','Position', [440   177   560   621/2], 'Visible'=psim.figsVisible)
+figure('Name','Figure2','Position', [440   177   560   621/2], 'Visible', psim.figsVisible)
 subplot(nrows,1,1)
 bar(yTemplate,'k')%
 xlim([0, pnet.nc])
