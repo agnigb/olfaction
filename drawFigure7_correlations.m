@@ -36,7 +36,7 @@ end
 figure('Name', 'Figure7B','Position',[111 174 1039  624],'Visible',psim.figsVisible) 
 npair = 0;
 %sumpairs = zeros(size(CM,1),1);
-tc = zeros(nt, nodours*(nodours-1));
+tc = zeros(nt, nodours*(nodours-1)/2);
 for iOdour = 1:nodours
     for iOdour2 = 1:iOdour-1 
         npair = npair + 1;
