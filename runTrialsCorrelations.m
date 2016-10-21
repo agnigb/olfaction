@@ -68,6 +68,8 @@ else
     load(sFile)
     fprintf(1,['Loaded ' sFile '\n']);
 end
+
+
 z = mean(mean(VBk.mTAll,2),3);
 drawFigure6_correlations(z(:,[5, 6]))
-drawFigure7_correlations(VBk.mTAll(:,:,1:10,:), nBin, VBk.rTAll(:,:,1:10,:))
+drawFigure7_correlations(VBk.mTAll, VBk.rTAll)

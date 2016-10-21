@@ -1,20 +1,16 @@
 % This is a master script, from which all experiments are run.
-%
-% to save all figures, type
-%
-%      saveFigures('figs/')
-%
-% caution: this will close the currently open figures.
+% 
+% Generated figures can be found in the figures/ folder in the main directory (from which the code is run). To prevent closing figures, remove the last line. To make the figure visible, change the todo.figsVisible switch to 'on'.
 %
 
 initAll
  
-todo.timecourseSingle = 1;
-todo.posterior = 1;
-todo.timecourses = 1;
-todo.venki = 1;
+todo.timecourseSingle = 0;
+todo.posterior = 0;
+todo.timecourses = 0;
+todo.venki = 0;
 todo.correlations = 1;
-todo.ROC = 1; 
+todo.ROC = 0; 
 
 todo.debug = 0;
 psim.figsVisible = 'off';
@@ -89,10 +85,7 @@ end
 if todo.correlations  
     % Correlations. Figures 8 and 9
     psim.vt = 1:round(1/psim.dt/1000):nt; % 1ms
-    psim.ntrials = 15;
-    if todo.debug 
-        psim.ntrials = 10;
-    end
+    psim.ntrials = 10;
     cValue = pscene.alpha_1/pscene.beta_1; 
     sFile = [dirMat 'sims/testCorrelations_c' num2str(cValue) '_net' psim.sSim '_nscenes' num2str(psim.ntrials) '.mat'];
     runEstimateStablePoint
@@ -112,7 +105,4 @@ if todo.ROC
     runMixtures 
 end
 
-saveFigures('figs/')
-                    
-                    
-                    
+saveFigures('figures/')
