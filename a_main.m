@@ -5,12 +5,12 @@
 
 initAll
  
-todo.timecourseSingle = 0;
-todo.posterior = 0;
-todo.timecourses = 0;
-todo.venki = 0;
+todo.timecourseSingle = 1;
+todo.posterior = 1;
+todo.timecourses = 1;
+todo.venki = 1;
 todo.correlations = 1;
-todo.ROC = 0; 
+todo.ROC = 1; 
 
 todo.debug = 0;
 psim.figsVisible = 'off';
