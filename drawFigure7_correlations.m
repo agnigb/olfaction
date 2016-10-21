@@ -55,7 +55,7 @@ set(gca,'Color','none','FontSize',12)
 legend(sLegend,'Location','BestOutside')
 
 x = mean(tc(50:100,:),1);
-y = mean(tc(200:250,:),1);
+y = mean(tc(300:350,:),1);
 
 [h,p,ci,stats] = ttest2(x, y)
 
