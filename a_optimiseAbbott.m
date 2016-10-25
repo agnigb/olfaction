@@ -100,7 +100,7 @@ for iy = 1:3
     [vm , vs ] = find(max(max(AROC(:,:,iy)))==AROC(:,:,iy)); 
  
     fprintf(1,['Best parameters ', sTitle{iy}, ':  \n m = %s \n sigma= %s \n'],mat2str(vmLuo(vm)),mat2str(vsigmaLuo(vs)))
-% drawFigure8_ROC(ROCtemplateLuoBest,['_templateLuoBest' testType],sLegend,[0 10]);
-% drawFigure8_ROC(squeeze(ROCtemplateLuo(3,1,1,:)),['_templateLuoN' testType],sLegend,[0 10]);
+% drawFigure7_ROC(ROCtemplateLuoBest,['_templateLuoBest' testType],sLegend,[0 10]);
+% drawFigure7_ROC(squeeze(ROCtemplateLuo(3,1,1,:)),['_templateLuoN' testType],sLegend,[0 10]);
 end
  

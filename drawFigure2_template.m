@@ -35,7 +35,8 @@ aT = VB.aT(:,1:10:end);
 for k = 1:nrows-1     
     subplot(nrows,1,k+1)
     
-    bar(cT(:,vTime(k)),'k'), xlim([0, 100])
+    bar(cT(:,vTime(k)),'k') 
+    xlim([0, pnet.nc])
     title(['network; ', num2str(vTime(k)-150), ' ms after onset' ])
     set(gca,'Color','none')
     stemp = cT(:,vTime(k));

@@ -85,4 +85,4 @@ ROCCosine =  analyse_ROC(yCosine, sTrueNet,100);
 ROCLuoFull =  analyse_ROC(yLuoFull, sTrueNet,100); 
 
 sLegendM = {'VB', 'Luo', 'Template'};
-drawFigure8_ROC({ ROC, ROCLuoFull, ROCCosine}, 'Figure', sLegendM,[0 10])  
+drawFigure7_ROC({ ROC, ROCLuoFull, ROCCosine}, 'Figure', sLegendM,[0 10])  

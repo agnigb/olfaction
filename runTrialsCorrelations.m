@@ -70,6 +70,4 @@ else
 end
 
 
-z = mean(mean(VBk.mTAll,2),3);
-drawFigure6_correlations(z(:,[5, 6]))
-drawFigure7_correlations(VBk.mTAll, VBk.rTAll)
+drawFigure6_correlations(VBk.mTAll, VBk.rTAll)
